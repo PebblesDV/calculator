@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.display {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#result {
+    grid-column: span 3;
+    margin: 5px;
+}
+
+.calculator {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    height: 70px;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.delete {
+    grid-column: span 2;
+}
