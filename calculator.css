@@ -16,15 +16,18 @@
 #result {
     grid-column: span 3;
     margin: 5px;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 20px;
 }
 
 .calculator {
     width: 300px;
     margin: 0 auto;
-    background-color: #f7f7f7;
+    background-color: #e9c7d7;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(2px 2px 5px black);
 }
 
 .button {
@@ -33,8 +36,27 @@
     font-size: 20px;
     border-radius: 5px;
     border: 1px solid black;
+    background-color: #f2d5e6;
+    transition: 0.2s;
+    filter: drop-shadow(2px 1px 1px black);
+}
+
+.button:active {
+    transform: scale(0.95);
 }
 
 .delete {
     grid-column: span 2;
+}
+
+.light-pink {
+    background-color: #e5afc9;
+}
+
+.medium-pink {
+    background-color: #de92b9;
+}
+
+.dark-pink {
+    background-color: #de6fa5;
 }
